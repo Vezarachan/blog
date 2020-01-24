@@ -291,7 +291,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">750</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">637</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -438,116 +438,6 @@ height:50vh;
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;class &apos;pandas.core.frame.DataFrame&apos;&gt;</span><br><span class="line">RangeIndex: 7698 entries, 0 to 7697</span><br><span class="line">Data columns (total 14 columns):</span><br><span class="line">0     7698 non-null int64</span><br><span class="line">1     7698 non-null object</span><br><span class="line">2     7649 non-null object</span><br><span class="line">3     7698 non-null object</span><br><span class="line">4     7698 non-null object</span><br><span class="line">5     7698 non-null object</span><br><span class="line">6     7698 non-null float64</span><br><span class="line">7     7698 non-null float64</span><br><span class="line">8     7698 non-null int64</span><br><span class="line">9     7698 non-null object</span><br><span class="line">10    7698 non-null object</span><br><span class="line">dtypes: float64(2), int64(2), object(10)</span><br><span class="line">memory usage: 842.1+ KB</span><br></pre></td></tr></table></figure>
 <p>该数据没有表头，总共有7698行10列数据，数据类型有float、int和object。由于数据量较大，因此我们可以使用head()或者tail()函数查看前几条数据抑或是后几条数据。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">airports.head(<span class="number">10</span>) <span class="comment"># 或是airports.tail(10)</span></span><br></pre></td></tr></table></figure>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th></th>
-<th>airport_id</th>
-<th>name</th>
-<th>city</th>
-<th>country</th>
-<th>IATA</th>
-<th>ICAO</th>
-<th>lat</th>
-<th>lon</th>
-<th>altitude</th>
-<th>timezone</th>
-<th>DST</th>
-<th>Tz database timezone</th>
-<th>type</th>
-<th>source</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>7688</td>
-<td>14101</td>
-<td>Rustaq Airport</td>
-<td>Al Masna’ah</td>
-<td>Oman</td>
-<td>MNH</td>
-<td>OORQ</td>
-<td>23.640556</td>
-<td>57.487500</td>
-<td>349</td>
-<td>\N</td>
-<td>\N</td>
-<td>\N</td>
-<td>airport</td>
-<td>OurAirports</td>
-</tr>
-<tr>
-<td>7689</td>
-<td>14102</td>
-<td>Laguindingan Airport</td>
-<td>Cagayan de Oro City</td>
-<td>Philippines</td>
-<td>CGY</td>
-<td>RPMY</td>
-<td>8.612203</td>
-<td>124.456496</td>
-<td>190</td>
-<td>\N</td>
-<td>\N</td>
-<td>\N</td>
-<td>airport</td>
-<td>OurAirports</td>
-</tr>
-<tr>
-<td>7690</td>
-<td>14103</td>
-<td>Kostomuksha Airport</td>
-<td>Kostomuksha</td>
-<td>Russia</td>
-<td>\N</td>
-<td>ULPM</td>
-<td>64.617996</td>
-<td>30.687000</td>
-<td>681</td>
-<td>\N</td>
-<td>\N</td>
-<td>\N</td>
-<td>airport</td>
-<td>OurAirports</td>
-</tr>
-<tr>
-<td>7691</td>
-<td>14104</td>
-<td>Privolzhskiy Air Base</td>
-<td>Astrakhan</td>
-<td>Russia</td>
-<td>\N</td>
-<td>XRAP</td>
-<td>46.396000</td>
-<td>47.893000</td>
-<td>-66</td>
-<td>\N</td>
-<td>\N</td>
-<td>\N</td>
-<td>airport</td>
-<td>OurAirports</td>
-</tr>
-<tr>
-<td>7692</td>
-<td>14105</td>
-<td>Kubinka Air Base</td>
-<td>Kubinka</td>
-<td>Russia</td>
-<td>\N</td>
-<td>UUMB</td>
-<td>55.611695</td>
-<td>36.650002</td>
-<td>614</td>
-<td>\N</td>
-<td>\N</td>
-<td>\N</td>
-<td>airport</td>
-<td>OurAirports</td>
-</tr>
-</tbody>
-</table>
-</div>
 <h2 id="获取数据基本信息"><a href="#获取数据基本信息" class="headerlink" title="获取数据基本信息"></a>获取数据基本信息</h2><h3 id="1-这些机场属于多少个国家？"><a href="#1-这些机场属于多少个国家？" class="headerlink" title="1. 这些机场属于多少个国家？"></a>1. 这些机场属于多少个国家？</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">airports.country.unique().size</span><br><span class="line"><span class="comment"># =&gt; 237</span></span><br></pre></td></tr></table></figure>
 <h3 id="2-哪个国家拥有的机场最多？"><a href="#2-哪个国家拥有的机场最多？" class="headerlink" title="2. 哪个国家拥有的机场最多？"></a>2. 哪个国家拥有的机场最多？</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 首先按照country分组</span></span><br><span class="line">max_airports_num = airports.groupby(<span class="string">"country"</span>)</span><br><span class="line"><span class="comment"># 然后进行聚合操作</span></span><br><span class="line">max_airports_num[<span class="string">"airport_id"</span>].agg(np.size).sort_values(ascending=<span class="keyword">False</span>)[<span class="number">0</span>:<span class="number">10</span>]</span><br><span class="line"><span class="comment"># =&gt;</span></span><br><span class="line"><span class="comment"># United States     1512</span></span><br><span class="line"><span class="comment"># Canada             430</span></span><br><span class="line"><span class="comment"># Australia          334</span></span><br><span class="line"><span class="comment"># Brazil             264</span></span><br><span class="line"><span class="comment"># Russia             264</span></span><br><span class="line"><span class="comment"># Germany            249</span></span><br><span class="line"><span class="comment"># China              241</span></span><br><span class="line"><span class="comment"># France             217</span></span><br><span class="line"><span class="comment"># United Kingdom     167</span></span><br><span class="line"><span class="comment"># India              148</span></span><br><span class="line"><span class="comment"># Name: airport_id, dtype: int64</span></span><br></pre></td></tr></table></figure>
 <p>我们可以进行可视化</p>
@@ -564,7 +454,7 @@ height:50vh;
             <p>原文作者：<a href="http://Vezarachan.github.io">Elaiza</a>
             </p><p>原文链接：<a href="http://Vezarachan.github.io/2020/01/22/pandas-series-1-/">http://Vezarachan.github.io/2020/01/22/pandas-series-1-/</a>
             </p><p>发表日期：<a href="http://Vezarachan.github.io/2020/01/22/pandas-series-1-/">January 22nd 2020, 9:25:43 pm</a>
-            </p><p>更新日期：<a href="http://Vezarachan.github.io/2020/01/22/pandas-series-1-/">January 25th 2020, 12:02:53 am</a>
+            </p><p>更新日期：<a href="http://Vezarachan.github.io/2020/01/22/pandas-series-1-/">January 25th 2020, 12:06:33 am</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
