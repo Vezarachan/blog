@@ -27,7 +27,7 @@
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
-        src: url("/font/Oswald-Regular.ttf");
+        src: url("/blog/font/Oswald-Regular.ttf");
     }
 
     body {
@@ -76,8 +76,8 @@
 
 </style>
 
-    <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    <link rel="preload" href="/blog/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="/blog/css/mobile.css?v=20180824" media="(max-width: 980px)">
     
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
@@ -188,11 +188,11 @@
 }( typeof global !== "undefined" ? global : this ) );
 </script>
 
-    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="icon" href="/blog/assets/favicon.ico">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script">
-    <link rel="preload" href="/scripts/main.js" as="script">
-    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" href="/blog/scripts/main.js" as="script">
+    <link rel="preload" as="font" href="/blog/font/Oswald-Regular.ttf" crossorigin>
     <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin>
     
         <!-- algolia -->
@@ -230,14 +230,14 @@
     
     <div class="banner">
             <div class="blog-title">
-                <a href="/" >Elaiza&#39;s Bookshop</a>
+                <a href="/blog/" >Elaiza&#39;s Bookshop</a>
             </div>
             <div class="post-title">
                 <a href="#" class="post-name">Learning GDAL -1-</a>
             </div>
     </div>
     
-    <a class="home-link" href=/>Elaiza's Bookshop</a>
+    <a class="home-link" href=/blog/>Elaiza's Bookshop</a>
 </header>
     <div class="wrapper">
         <div class="site-intro" style="
@@ -257,7 +257,7 @@ height:50vh;
     <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/post_bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/blog/intro/post_bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
@@ -290,7 +290,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">607</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">609</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -412,28 +412,34 @@ height:50vh;
   asyncLoadWithFallBack([
     "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
     "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
-    "/lib/webfontloader.min.js"
+    "/blog/lib/webfontloader.min.js"
   ], asyncCb, asyncErr)
 </script>        
-        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <img class="loading" src="/blog/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h1 id="Learning-GDAL"><a href="#Learning-GDAL" class="headerlink" title="Learning GDAL"></a>Learning GDAL</h1><h2 id="初识GDAL"><a href="#初识GDAL" class="headerlink" title="初识GDAL"></a>初识GDAL</h2><p>GDAL是由C++编写的具有X/MIT许可证的开源空间数据操作库，其主要由两部分组成，如下所示：</p>
+        <h1>Learning GDAL</h1>
+<h2 id="初识GDAL">初识GDAL</h2>
+<p>GDAL是由C++编写的具有X/MIT许可证的开源空间数据操作库，其主要由两部分组成，如下所示：</p>
 <ul>
 <li>GDAL(Geospatial Data Abstraction Library，地理空间数据抽象库，用于操作栅格数据)</li>
 <li>ORG(OGR Simple Feature Library，简单要素库，用于操作矢量数据)</li>
 </ul>
 <a id="more"></a>
-<h2 id="GDAL支持的数据格式"><a href="#GDAL支持的数据格式" class="headerlink" title="GDAL支持的数据格式"></a>GDAL支持的数据格式</h2><ol>
-<li><p><a href="https://www.gdal.org/formats_list.html" target="_blank" rel="noopener">栅格数据格式</a>（155）</p>
+<h2 id="GDAL支持的数据格式">GDAL支持的数据格式</h2>
+<ol>
+<li>
+<p><a href="https://www.gdal.org/formats_list.html" target="_blank" rel="noopener">栅格数据格式</a>（155）</p>
 <p><img src="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/gdal_supported_raster_frmts.jpg" alt="supported_raster_formats"></p>
 </li>
-<li><p><a href="https://www.gdal.org/ogr_formats.html" target="_blank" rel="noopener">矢量数据格式</a>（95）</p>
+<li>
+<p><a href="https://www.gdal.org/ogr_formats.html" target="_blank" rel="noopener">矢量数据格式</a>（95）</p>
 <p><img src="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/gdal_supported_vec_frmts.jpg" alt="supported_vector_formats"></p>
 </li>
 </ol>
-<h2 id="GDAL源码文件夹结构"><a href="#GDAL源码文件夹结构" class="headerlink" title="GDAL源码文件夹结构"></a>GDAL源码文件夹结构</h2><ul>
+<h2 id="GDAL源码文件夹结构">GDAL源码文件夹结构</h2>
+<ul>
 <li>alg：GDAL库中提供的一些算法的源代码（这些算法包括但不限于：DEM生成等高线算法、图像纠正算法（几何纠正、TPS纠正、RPC纠正等），栅格矢量化算法、矢量栅格化算法、格网计算算法、PCT和RGB互转算法、分类图的小碎斑块去除算法等）</li>
 <li>apps：GDAL库中提供的一些命令行工具集的源代码</li>
 <li>bridge：用来连接GDAL抽象类的定义和GDAL自己的结构体定义及其实现的源代码</li>
@@ -458,10 +464,10 @@ height:50vh;
     <!-- license  -->
     
         <div class="license-wrapper">
-            <p>原文作者：<a href="https://elaiza.pro">Elaiza</a>
-            <p>原文链接：<a href="https://elaiza.pro/2019/04/14/GDAL学习笔记1/">https://elaiza.pro/2019/04/14/GDAL学习笔记1/</a>
-            <p>发表日期：<a href="https://elaiza.pro/2019/04/14/GDAL学习笔记1/">April 14th 2019, 12:00:00 am</a>
-            <p>更新日期：<a href="https://elaiza.pro/2019/04/14/GDAL学习笔记1/">January 22nd 2020, 9:30:08 pm</a>
+            <p>原文作者：<a href="https://elaiza.pro/blog">Elaiza</a>
+            <p>原文链接：<a href="https://elaiza.pro/blog/2019/04/14/GDAL学习笔记1/">https://elaiza.pro/blog/2019/04/14/GDAL学习笔记1/</a>
+            <p>发表日期：<a href="https://elaiza.pro/blog/2019/04/14/GDAL学习笔记1/">April 14th 2019, 12:00:00 am</a>
+            <p>更新日期：<a href="https://elaiza.pro/blog/2019/04/14/GDAL学习笔记1/">January 22nd 2020, 9:30:08 pm</a>
             <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -470,7 +476,7 @@ height:50vh;
         <li class="next">
             
                 <div class="nextSlogan">Next Post</div>
-                <a href= "/2020/01/22/pandas-series-1-/" title= "学习pandas系列 -1-">
+                <a href= "/blog/2020/01/22/pandas-series-1-/" title= "学习pandas系列 -1-">
                     <div class="nextTitle">学习pandas系列 -1-</div>
                 </a>
             
@@ -478,7 +484,7 @@ height:50vh;
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2019/04/11/GeoCafe-wiki/" title= "GeoCafe-wiki GIS知识整理">
+                <a href= "/blog/2019/04/11/GeoCafe-wiki/" title= "GeoCafe-wiki GIS知识整理">
                     <div class="prevTitle">GeoCafe-wiki GIS知识整理</div>
                 </a>
             
@@ -540,7 +546,7 @@ height:50vh;
             
                 <span class="iconfont-archer wechat" title=wechat>
                   
-                  <img class="profile-qr" src="/assets/wechat_qrcode.png" />
+                  <img class="profile-qr" src="/blog/assets/wechat_qrcode.png" />
                 </span>
             
         
@@ -583,7 +589,7 @@ height:50vh;
     
         
             
-                <a href="/atom.xml" class="iconfont-archer rss" target="_blank" title=rss></a>
+                <a href="/blog/atom.xml" class="iconfont-archer rss" target="_blank" title=rss></a>
             
         
     
@@ -622,7 +628,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Learning-GDAL"><span class="toc-number">1.</span> <span class="toc-text">Learning GDAL</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#初识GDAL"><span class="toc-number">1.1.</span> <span class="toc-text">初识GDAL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GDAL支持的数据格式"><span class="toc-number">1.2.</span> <span class="toc-text">GDAL支持的数据格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GDAL源码文件夹结构"><span class="toc-number">1.3.</span> <span class="toc-text">GDAL源码文件夹结构</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text">Learning GDAL</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#初识GDAL"><span class="toc-number">1.1.</span> <span class="toc-text">初识GDAL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GDAL支持的数据格式"><span class="toc-number">1.2.</span> <span class="toc-text">GDAL支持的数据格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GDAL源码文件夹结构"><span class="toc-number">1.3.</span> <span class="toc-text">GDAL源码文件夹结构</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -635,10 +641,6 @@ top:50vh;
     <div class="sidebar-content sidebar-content-show-archive">
           <div class="sidebar-panel-archives">
     <!-- 在ejs中将archive按照时间排序 -->
-    
-    
-    
-    
     
     
     
@@ -704,12 +706,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">01/29</span><a class="archive-post-title" href= "/2020/01/29/economist-series-1/" >外刊精读系列之Economist[1]</a>
+            <span class="archive-post-date">01/29</span><a class="archive-post-title" href= "/blog/2020/01/29/economist-series-1/" >外刊精读系列之Economist[1]</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">01/22</span><a class="archive-post-title" href= "/2020/01/22/pandas-series-1-/" >学习pandas系列 -1-</a>
+            <span class="archive-post-date">01/22</span><a class="archive-post-title" href= "/blog/2020/01/22/pandas-series-1-/" >学习pandas系列 -1-</a>
         </li>
     
     
@@ -723,12 +725,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/14</span><a class="archive-post-title" href= "/2019/04/14/GDAL学习笔记1/" >Learning GDAL -1-</a>
+            <span class="archive-post-date">04/14</span><a class="archive-post-title" href= "/blog/2019/04/14/GDAL学习笔记1/" >Learning GDAL -1-</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/11</span><a class="archive-post-title" href= "/2019/04/11/GeoCafe-wiki/" >GeoCafe-wiki GIS知识整理</a>
+            <span class="archive-post-date">04/11</span><a class="archive-post-title" href= "/blog/2019/04/11/GeoCafe-wiki/" >GeoCafe-wiki GIS知识整理</a>
         </li>
     
     
@@ -742,7 +744,7 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/14</span><a class="archive-post-title" href= "/2018/05/14/JSON_Learing_1/" >JSON Learning -1-</a>
+            <span class="archive-post-date">05/14</span><a class="archive-post-title" href= "/blog/2018/05/14/JSON_Learing_1/" >JSON Learning -1-</a>
         </li>
     
     </div>
@@ -754,10 +756,6 @@ top:50vh;
     
         <span class="sidebar-tag-name" data-tags="GIS"><span class="iconfont-archer">&#xe606;</span>GIS</span>
     
-        <span class="sidebar-tag-name" data-tags="学习笔记"><span class="iconfont-archer">&#xe606;</span>学习笔记</span>
-    
-        <span class="sidebar-tag-name" data-tags="JSON"><span class="iconfont-archer">&#xe606;</span>JSON</span>
-    
         <span class="sidebar-tag-name" data-tags="pandas"><span class="iconfont-archer">&#xe606;</span>pandas</span>
     
         <span class="sidebar-tag-name" data-tags="python"><span class="iconfont-archer">&#xe606;</span>python</span>
@@ -767,6 +765,10 @@ top:50vh;
         <span class="sidebar-tag-name" data-tags="经济学人"><span class="iconfont-archer">&#xe606;</span>经济学人</span>
     
         <span class="sidebar-tag-name" data-tags="外刊"><span class="iconfont-archer">&#xe606;</span>外刊</span>
+    
+        <span class="sidebar-tag-name" data-tags="学习笔记"><span class="iconfont-archer">&#xe606;</span>学习笔记</span>
+    
+        <span class="sidebar-tag-name" data-tags="JSON"><span class="iconfont-archer">&#xe606;</span>JSON</span>
     
         <span class="sidebar-tag-name" data-tags="wiki"><span class="iconfont-archer">&#xe606;</span>wiki</span>
     
@@ -805,11 +807,11 @@ jsonContent:
     
         <span class="sidebar-category-name" data-categories="GIS"><span class="iconfont-archer">&#xe60a;</span>GIS</span>
     
-        <span class="sidebar-category-name" data-categories="JSON"><span class="iconfont-archer">&#xe60a;</span>JSON</span>
-    
         <span class="sidebar-category-name" data-categories="数据分析"><span class="iconfont-archer">&#xe60a;</span>数据分析</span>
     
         <span class="sidebar-category-name" data-categories="Reading"><span class="iconfont-archer">&#xe60a;</span>Reading</span>
+    
+        <span class="sidebar-category-name" data-categories="JSON"><span class="iconfont-archer">&#xe60a;</span>JSON</span>
     
         <span class="sidebar-category-name" data-categories="Others"><span class="iconfont-archer">&#xe60a;</span>Others</span>
     
@@ -821,7 +823,7 @@ jsonContent:
 </div> 
     <script>
     var siteMeta = {
-        root: "/",
+        root: "/blog/",
         author: "Elaiza"
     }
 </script>
@@ -831,10 +833,10 @@ jsonContent:
         if (typeof window.$ === 'undefined')
         {
             console.warn('jquery load from jsdelivr failed, will load local script')
-            document.write('<script src="/lib/jquery.min.js">\x3C/script>')
+            document.write('<script src="/blog/lib/jquery.min.js">\x3C/script>')
         }
     </script>
-    <script src="/scripts/main.js"></script>
+    <script src="/blog/scripts/main.js"></script>
     <!-- algolia -->
     
         <div class="site-search">
@@ -858,7 +860,7 @@ jsonContent:
   </div>
 </div>
         <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.0/dist/instantsearch.min.js" defer></script>
-        <script src="/scripts/search.js" defer></script>
+        <script src="/blog/scripts/search.js" defer></script>
     
     <!-- busuanzi  -->
     
@@ -869,9 +871,9 @@ jsonContent:
     </div>
     <!-- async load share.js -->
     
-        <script src="/scripts/share.js" async></script>    
+        <script src="/blog/scripts/share.js" async></script>    
      
-	<script src="/lib/love.js"></script>
+	<script src="/blog/lib/love.js"></script>
     </body>
 </html>
 
