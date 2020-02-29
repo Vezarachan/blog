@@ -292,7 +292,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">637</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">641</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -421,30 +421,43 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p><img src="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/pandas/pandas.png" style="width: 80%"></p>
-<h1 id="Pandas是什么"><a href="#Pandas是什么" class="headerlink" title="Pandas是什么"></a>Pandas是什么</h1><a id="more"></a>
+        <img src="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/pandas/pandas.png" style="width: 80%">
+<h1>Pandas是什么</h1>
+<a id="more"></a>
 <p>pandas为python提供了高性能、易于使用的数据结构与数据分析工具，其能够在读写不同的数据结构（包含csv、dat、excel等文本数据格式以及hdf5等二进制格式），还能够完成时间序列分析。</p>
-<h1 id="Pandas的基本数据结构"><a href="#Pandas的基本数据结构" class="headerlink" title="Pandas的基本数据结构"></a>Pandas的基本数据结构</h1><h2 id="Series"><a href="#Series" class="headerlink" title="Series"></a>Series</h2><p>Series支持大部分<a href="https://numpy.org/" target="_blank" rel="noopener">numpy</a>所支持的操作（本质上是对numpy数据类型的拓展），其类似于多维数组或是字典。</p>
-<h2 id="DataFrame"><a href="#DataFrame" class="headerlink" title="DataFrame"></a>DataFrame</h2><p>DataFrame为多种数据类型列构成的二维标签数据类型，与excel和数据库表类似。</p>
-<h1 id="开始上手pandas"><a href="#开始上手pandas" class="headerlink" title="开始上手pandas"></a>开始上手pandas</h1><h2 id="1-示例数据"><a href="#1-示例数据" class="headerlink" title="1. 示例数据"></a>1. 示例数据</h2><p>此处练习采用的数据：</p>
+<h1>Pandas的基本数据结构</h1>
+<h2 id="Series">Series</h2>
+<p>Series支持大部分<a href="https://numpy.org/" target="_blank" rel="noopener">numpy</a>所支持的操作（本质上是对numpy数据类型的拓展），其类似于多维数组或是字典。</p>
+<h2 id="DataFrame">DataFrame</h2>
+<p>DataFrame为多种数据类型列构成的二维标签数据类型，与excel和数据库表类似。</p>
+<h1>开始上手pandas</h1>
+<h2 id="1-示例数据">1. 示例数据</h2>
+<p>此处练习采用的数据：</p>
 <ol>
-<li><p><a href="https://openflights.org/data.html" target="_blank" rel="noopener">openflight</a>的机场数据<a href="https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat" target="_blank" rel="noopener">airports.dat</a>，其总共包含了7697条数据。</p>
+<li>
+<p><a href="https://openflights.org/data.html" target="_blank" rel="noopener">openflight</a>的机场数据<a href="https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat" target="_blank" rel="noopener">airports.dat</a>，其总共包含了7697条数据。</p>
 </li>
-<li><p>一个是英国的人口随时间变化的数据，年份从2000年至2018年。</p>
+<li>
+<p>一个是英国的人口随时间变化的数据，年份从2000年至2018年。</p>
 </li>
 </ol>
-<h2 id="2-读取数据"><a href="#2-读取数据" class="headerlink" title="2. 读取数据"></a>2. 读取数据</h2><p>pandas提供了读取不同类型数据的函数<strong>read_XXX(args…)</strong>，能够读取不同的数据格式。</p>
+<h2 id="2-读取数据">2. 读取数据</h2>
+<p>pandas提供了读取不同类型数据的函数<strong>read_XXX(args…)</strong>，能够读取不同的数据格式。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">airports = pd.read_csv(<span class="string">r"path\to\data\airports.dat"</span>, header=<span class="literal">None</span>)</span><br><span class="line">airports.info() <span class="comment"># 查看数据信息</span></span><br></pre></td></tr></table></figure>
 <p>可以看到返回了读取的数据的信息如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;class &apos;pandas.core.frame.DataFrame&apos;&gt;</span><br><span class="line">RangeIndex: 7698 entries, 0 to 7697</span><br><span class="line">Data columns (total 14 columns):</span><br><span class="line">0     7698 non-null int64</span><br><span class="line">1     7698 non-null object</span><br><span class="line">2     7649 non-null object</span><br><span class="line">3     7698 non-null object</span><br><span class="line">4     7698 non-null object</span><br><span class="line">5     7698 non-null object</span><br><span class="line">6     7698 non-null float64</span><br><span class="line">7     7698 non-null float64</span><br><span class="line">8     7698 non-null int64</span><br><span class="line">9     7698 non-null object</span><br><span class="line">10    7698 non-null object</span><br><span class="line">dtypes: float64(2), int64(2), object(10)</span><br><span class="line">memory usage: 842.1+ KB</span><br></pre></td></tr></table></figure>
 <p>该数据没有表头，总共有7698行10列数据，数据类型有float、int和object。由于数据量较大，因此我们可以使用head()或者tail()函数查看前几条数据抑或是后几条数据。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">airports.head(<span class="number">10</span>) <span class="comment"># 或是airports.tail(10)</span></span><br></pre></td></tr></table></figure>
-<h2 id="获取数据基本信息"><a href="#获取数据基本信息" class="headerlink" title="获取数据基本信息"></a>获取数据基本信息</h2><h3 id="1-这些机场属于多少个国家？"><a href="#1-这些机场属于多少个国家？" class="headerlink" title="1. 这些机场属于多少个国家？"></a>1. 这些机场属于多少个国家？</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">airports.country.unique().size</span><br><span class="line"><span class="comment"># =&gt; 237</span></span><br></pre></td></tr></table></figure>
-<h3 id="2-哪个国家拥有的机场最多？"><a href="#2-哪个国家拥有的机场最多？" class="headerlink" title="2. 哪个国家拥有的机场最多？"></a>2. 哪个国家拥有的机场最多？</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 首先按照country分组</span></span><br><span class="line">max_airports_num = airports.groupby(<span class="string">"country"</span>)</span><br><span class="line"><span class="comment"># 然后进行聚合操作</span></span><br><span class="line">max_airports_num[<span class="string">"airport_id"</span>].agg(np.size).sort_values(ascending=<span class="literal">False</span>)[<span class="number">0</span>:<span class="number">10</span>]</span><br><span class="line"><span class="comment"># =&gt;</span></span><br><span class="line"><span class="comment"># United States     1512</span></span><br><span class="line"><span class="comment"># Canada             430</span></span><br><span class="line"><span class="comment"># Australia          334</span></span><br><span class="line"><span class="comment"># Brazil             264</span></span><br><span class="line"><span class="comment"># Russia             264</span></span><br><span class="line"><span class="comment"># Germany            249</span></span><br><span class="line"><span class="comment"># China              241</span></span><br><span class="line"><span class="comment"># France             217</span></span><br><span class="line"><span class="comment"># United Kingdom     167</span></span><br><span class="line"><span class="comment"># India              148</span></span><br><span class="line"><span class="comment"># Name: airport_id, dtype: int64</span></span><br></pre></td></tr></table></figure>
+<h2 id="获取数据基本信息">获取数据基本信息</h2>
+<h3 id="1-这些机场属于多少个国家？">1. 这些机场属于多少个国家？</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">airports.country.unique().size</span><br><span class="line"><span class="comment"># =&gt; 237</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-哪个国家拥有的机场最多？">2. 哪个国家拥有的机场最多？</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 首先按照country分组</span></span><br><span class="line">max_airports_num = airports.groupby(<span class="string">"country"</span>)</span><br><span class="line"><span class="comment"># 然后进行聚合操作</span></span><br><span class="line">max_airports_num[<span class="string">"airport_id"</span>].agg(np.size).sort_values(ascending=<span class="literal">False</span>)[<span class="number">0</span>:<span class="number">10</span>]</span><br><span class="line"><span class="comment"># =&gt;</span></span><br><span class="line"><span class="comment"># United States     1512</span></span><br><span class="line"><span class="comment"># Canada             430</span></span><br><span class="line"><span class="comment"># Australia          334</span></span><br><span class="line"><span class="comment"># Brazil             264</span></span><br><span class="line"><span class="comment"># Russia             264</span></span><br><span class="line"><span class="comment"># Germany            249</span></span><br><span class="line"><span class="comment"># China              241</span></span><br><span class="line"><span class="comment"># France             217</span></span><br><span class="line"><span class="comment"># United Kingdom     167</span></span><br><span class="line"><span class="comment"># India              148</span></span><br><span class="line"><span class="comment"># Name: airport_id, dtype: int64</span></span><br></pre></td></tr></table></figure>
 <p>我们可以进行可视化</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">%matplotlib inline</span><br><span class="line">plt.style.use(<span class="string">"seaborn-dark"</span>)</span><br><span class="line">plt.bar(data=max_airports_countries, x=max_airports_countries.index, height=max_airports_countries.values, facecolor = <span class="string">'lightskyblue'</span>)</span><br><span class="line">plt.xticks(rotation=<span class="number">45</span>)</span><br><span class="line">plt.xlabel(<span class="string">"Country"</span>)</span><br><span class="line">plt.ylabel(<span class="string">"Airport Number"</span>)</span><br><span class="line">plt.title(<span class="string">"Those countries owns most airports"</span>)</span><br></pre></td></tr></table></figure>
 <p><img src="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/pandas/countries_airports.png" alt></p>
-<h3 id="3-哪些国家的平均海拔最低？"><a href="#3-哪些国家的平均海拔最低？" class="headerlink" title="3. 哪些国家的平均海拔最低？"></a>3. 哪些国家的平均海拔最低？</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">min_alt_agg = airports.groupby(<span class="string">"country"</span>)</span><br><span class="line">min_alt_agg[<span class="string">"altitude"</span>].agg(np.mean).sort_values(ascending=<span class="literal">True</span>)[<span class="number">0</span>:<span class="number">10</span>]</span><br><span class="line"><span class="comment"># =&gt;</span></span><br><span class="line"><span class="comment"># Kiribati                           4.611111</span></span><br><span class="line"><span class="comment"># Cayman Islands                     6.333333</span></span><br><span class="line"><span class="comment"># Johnston Atoll                     7.000000</span></span><br><span class="line"><span class="comment"># Maldives                           8.090909</span></span><br><span class="line"><span class="comment"># Tuvalu                             9.000000</span></span><br><span class="line"><span class="comment"># British Indian Ocean Territory     9.000000</span></span><br><span class="line"><span class="comment"># Turks and Caicos Islands           9.333333</span></span><br><span class="line"><span class="comment"># Seychelles                         9.500000</span></span><br><span class="line"><span class="comment"># Marshall Islands                   9.875000</span></span><br><span class="line"><span class="comment"># Cocos (Keeling) Islands           10.000000</span></span><br><span class="line"><span class="comment"># Name: altitude, dtype: float64</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-哪些国家的平均海拔最低？">3. 哪些国家的平均海拔最低？</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">min_alt_agg = airports.groupby(<span class="string">"country"</span>)</span><br><span class="line">min_alt_agg[<span class="string">"altitude"</span>].agg(np.mean).sort_values(ascending=<span class="literal">True</span>)[<span class="number">0</span>:<span class="number">10</span>]</span><br><span class="line"><span class="comment"># =&gt;</span></span><br><span class="line"><span class="comment"># Kiribati                           4.611111</span></span><br><span class="line"><span class="comment"># Cayman Islands                     6.333333</span></span><br><span class="line"><span class="comment"># Johnston Atoll                     7.000000</span></span><br><span class="line"><span class="comment"># Maldives                           8.090909</span></span><br><span class="line"><span class="comment"># Tuvalu                             9.000000</span></span><br><span class="line"><span class="comment"># British Indian Ocean Territory     9.000000</span></span><br><span class="line"><span class="comment"># Turks and Caicos Islands           9.333333</span></span><br><span class="line"><span class="comment"># Seychelles                         9.500000</span></span><br><span class="line"><span class="comment"># Marshall Islands                   9.875000</span></span><br><span class="line"><span class="comment"># Cocos (Keeling) Islands           10.000000</span></span><br><span class="line"><span class="comment"># Name: altitude, dtype: float64</span></span><br></pre></td></tr></table></figure>
 <hr>
 <p>详细代码<a href="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/pandas/tutorial-1.ipynb" target="_blank" rel="noopener">点击此处</a>可获取。</p>
 
@@ -616,7 +629,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Pandas是什么"><span class="toc-number">1.</span> <span class="toc-text">Pandas是什么</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Pandas的基本数据结构"><span class="toc-number">2.</span> <span class="toc-text">Pandas的基本数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Series"><span class="toc-number">2.1.</span> <span class="toc-text">Series</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DataFrame"><span class="toc-number">2.2.</span> <span class="toc-text">DataFrame</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#开始上手pandas"><span class="toc-number">3.</span> <span class="toc-text">开始上手pandas</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-示例数据"><span class="toc-number">3.1.</span> <span class="toc-text">1. 示例数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-读取数据"><span class="toc-number">3.2.</span> <span class="toc-text">2. 读取数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取数据基本信息"><span class="toc-number">3.3.</span> <span class="toc-text">获取数据基本信息</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-这些机场属于多少个国家？"><span class="toc-number">3.3.1.</span> <span class="toc-text">1. 这些机场属于多少个国家？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-哪个国家拥有的机场最多？"><span class="toc-number">3.3.2.</span> <span class="toc-text">2. 哪个国家拥有的机场最多？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-哪些国家的平均海拔最低？"><span class="toc-number">3.3.3.</span> <span class="toc-text">3. 哪些国家的平均海拔最低？</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text">Pandas是什么</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">2.</span> <span class="toc-text">Pandas的基本数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Series"><span class="toc-number">2.1.</span> <span class="toc-text">Series</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DataFrame"><span class="toc-number">2.2.</span> <span class="toc-text">DataFrame</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">3.</span> <span class="toc-text">开始上手pandas</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-示例数据"><span class="toc-number">3.1.</span> <span class="toc-text">1. 示例数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-读取数据"><span class="toc-number">3.2.</span> <span class="toc-text">2. 读取数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取数据基本信息"><span class="toc-number">3.3.</span> <span class="toc-text">获取数据基本信息</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-这些机场属于多少个国家？"><span class="toc-number">3.3.1.</span> <span class="toc-text">1. 这些机场属于多少个国家？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-哪个国家拥有的机场最多？"><span class="toc-number">3.3.2.</span> <span class="toc-text">2. 哪个国家拥有的机场最多？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-哪些国家的平均海拔最低？"><span class="toc-number">3.3.3.</span> <span class="toc-text">3. 哪些国家的平均海拔最低？</span></a></li></ol></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -629,6 +642,8 @@ top:50vh;
     <div class="sidebar-content sidebar-content-show-archive">
           <div class="sidebar-panel-archives">
     <!-- 在ejs中将archive按照时间排序 -->
+    
+    
     
     
     
@@ -742,23 +757,23 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="经济学人"><span class="iconfont-archer">&#xe606;</span>经济学人</span>
+        <span class="sidebar-tag-name" data-tags="学习笔记"><span class="iconfont-archer">&#xe606;</span>学习笔记</span>
     
-        <span class="sidebar-tag-name" data-tags="外刊"><span class="iconfont-archer">&#xe606;</span>外刊</span>
+        <span class="sidebar-tag-name" data-tags="JSON"><span class="iconfont-archer">&#xe606;</span>JSON</span>
     
         <span class="sidebar-tag-name" data-tags="GDAL"><span class="iconfont-archer">&#xe606;</span>GDAL</span>
     
         <span class="sidebar-tag-name" data-tags="GIS"><span class="iconfont-archer">&#xe606;</span>GIS</span>
-    
-        <span class="sidebar-tag-name" data-tags="学习笔记"><span class="iconfont-archer">&#xe606;</span>学习笔记</span>
-    
-        <span class="sidebar-tag-name" data-tags="JSON"><span class="iconfont-archer">&#xe606;</span>JSON</span>
     
         <span class="sidebar-tag-name" data-tags="pandas"><span class="iconfont-archer">&#xe606;</span>pandas</span>
     
         <span class="sidebar-tag-name" data-tags="python"><span class="iconfont-archer">&#xe606;</span>python</span>
     
         <span class="sidebar-tag-name" data-tags="数据分析"><span class="iconfont-archer">&#xe606;</span>数据分析</span>
+    
+        <span class="sidebar-tag-name" data-tags="经济学人"><span class="iconfont-archer">&#xe606;</span>经济学人</span>
+    
+        <span class="sidebar-tag-name" data-tags="外刊"><span class="iconfont-archer">&#xe606;</span>外刊</span>
     
         <span class="sidebar-tag-name" data-tags="wiki"><span class="iconfont-archer">&#xe606;</span>wiki</span>
     
@@ -795,13 +810,13 @@ jsonContent:
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
-        <span class="sidebar-category-name" data-categories="Reading"><span class="iconfont-archer">&#xe60a;</span>Reading</span>
+        <span class="sidebar-category-name" data-categories="JSON"><span class="iconfont-archer">&#xe60a;</span>JSON</span>
     
         <span class="sidebar-category-name" data-categories="GIS"><span class="iconfont-archer">&#xe60a;</span>GIS</span>
     
-        <span class="sidebar-category-name" data-categories="JSON"><span class="iconfont-archer">&#xe60a;</span>JSON</span>
-    
         <span class="sidebar-category-name" data-categories="数据分析"><span class="iconfont-archer">&#xe60a;</span>数据分析</span>
+    
+        <span class="sidebar-category-name" data-categories="Reading"><span class="iconfont-archer">&#xe60a;</span>Reading</span>
     
         <span class="sidebar-category-name" data-categories="Others"><span class="iconfont-archer">&#xe60a;</span>Others</span>
     
