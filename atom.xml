@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://elaiza.pro/blog/"/>
-  <updated>2020-01-29T16:14:36.483Z</updated>
+  <updated>2020-03-13T07:27:32.837Z</updated>
   <id>https://elaiza.pro/blog/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>外刊精读系列之Economist[2]</title>
+    <link href="https://elaiza.pro/blog/2020/03/13/economist-series-2/"/>
+    <id>https://elaiza.pro/blog/2020/03/13/economist-series-2/</id>
+    <published>2020-03-13T06:45:15.000Z</published>
+    <updated>2020-03-13T07:27:32.837Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/economist/The-Economist-logo.jpg" alt></p><p>本次精读的文章为<em><strong>The Economist</strong></em>中Graph Details板块中的一篇文章，结合图表和具体分析，是学习数据分析类文章写作，且其关注的是城市扩张的话题，也能够给我们对于Geo+Urban的学习具有一定的学习意义。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/economist/The-Economist-logo.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;本次精读的文章为&lt;em&gt;&lt;st
+      
+    
+    </summary>
+    
+      <category term="Reading" scheme="https://elaiza.pro/blog/categories/Reading/"/>
+    
+    
+      <category term="经济学人" scheme="https://elaiza.pro/blog/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E4%BA%BA/"/>
+    
+      <category term="外刊" scheme="https://elaiza.pro/blog/tags/%E5%A4%96%E5%88%8A/"/>
+    
+  </entry>
   
   <entry>
     <title>外刊精读系列之Economist[1]</title>
