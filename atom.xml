@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://elaiza.pro/blog/"/>
-  <updated>2020-05-04T06:41:56.342Z</updated>
+  <updated>2020-05-04T06:44:06.795Z</updated>
   <id>https://elaiza.pro/blog/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>外刊精读系列之Economist[3]</title>
+    <title>外刊精读系列之Economist[4]</title>
     <link href="https://elaiza.pro/blog/2020/05/03/economist-series-4/"/>
     <id>https://elaiza.pro/blog/2020/05/03/economist-series-4/</id>
     <published>2020-05-03T06:38:16.000Z</published>
-    <updated>2020-05-04T06:41:56.342Z</updated>
+    <updated>2020-05-04T06:44:06.795Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/economist/The-Economist-logo.jpg" alt></p><p>今天阅读的这篇文章出自2020年4月25日的『The Economist』中<strong>Graph Detail</strong>板块的文章（主要是数据的可视化及其解读），图表的名称为<strong>Vulnerability to covid-19</strong>。下面的解读的文章题为<em>Dixie in crosshairs</em>，副标题为<strong>The South is likely to have America’s highest death rate from covid-19</strong>，表明美国南方地区是covid-19的高危地区。</p><a id="more"></a><p>地图的解读：</p><ol><li>该地图采用等面积投影，能够较好地反映地区地面积。</li><li>采用log运算，能够使得数据分级更加合理。</li><li>ECDC和Microsoft的疫情状况与此图基本吻合，New England地区由于人口集中相对比较严重。</li><li>但是也可以看到，南部及阿巴拉契亚地区的情况不容乐观，文章中解释了原因：<ol><li>老人以及患有心脏病、糖尿病的病人较多。</li><li>黑人以及穷人较多，且医疗卫生状况较差。</li><li>人口比较密集和社会隔离执行较差。</li></ol></li></ol><p><img src="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/economist/vulnerability-to-covid19.jpg" alt="vulnerability-to-covid-19"></p><p>文章的结构和内容分析如下：</p><img src="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/economist/Dixie-in-the-crosshairs.png" alt="Dixie in the crosshairs" style="zoom: 200%;">]]></content>
     
