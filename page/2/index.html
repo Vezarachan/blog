@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta property="og:type" content="website">
 <meta property="og:title" content="Elaiza&#39;s Bookshop">
-<meta property="og:url" content="https://elaiza.pro/blog/archives/2019/04/index.html">
+<meta property="og:url" content="https://elaiza.pro/blog/page/2/index.html">
 <meta property="og:site_name" content="Elaiza&#39;s Bookshop">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
@@ -87,8 +87,6 @@
 
     <link rel="preload" href="/blog/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/blog/css/mobile.css?v=20180824" media="(max-width: 980px)">
-    
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -213,8 +211,10 @@
 </head>
 
     
+        <body class="home-body">
     
-<header class="header">
+    
+<header class="header index-header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
@@ -230,21 +230,34 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 文章页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/blog/)"></div>
+    <div class="site-intro-img" style="background-image: url(/blog/intro/index-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
+            Elaiza's Bookshop
+            <!-- 文章页  -->
+            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
+            
+            
+                The philosophy of geography
+            
+            <!-- 文章页  -->
             
         </p>
         <!-- 文章页meta -->
@@ -356,63 +369,32 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/blog/2019/04/14/GDAL学习笔记1/" >
+        <a class="abstract-title" href = "/blog/2018/05/14/JSON_Learing_1/" >
             
-                <span>Learning GDAL -1-</span>
+                <span>JSON Learning -1-</span>
         </a>
         <div class="abstract-content">
-            <h1>Learning GDAL</h1>
-<h2 id="初识GDAL">初识GDAL</h2>
-<p>GDAL是由C++编写的具有X/MIT许可证的开源空间数据操作库，其主要由两部分组成，如下所示：</p>
-<ul>
-<li>GDAL(Geospatial Data Abstraction Library，地理空间数据抽象库，用于操作栅格数据)</li>
-<li>ORG(OGR Simple Feature Library，简单要素库，用于操作矢量数据)</li>
-</ul>
+            <h1>什么是JSON</h1>
+<h2 id="1-先给JSON下个定义">1.先给JSON下个定义</h2>
+<ol>
+<li>JSON(JavaScript Object Notation)——JavaScript对象表示法。</li>
+<li>JSON是一种被多种系统用于交换数据的数据交换格式。</li>
+<li>JSON独立于编程语言，和JavaScript有着一定的关系（来源于JavaScript的一个子集），它是基于JavaScript对象字面量<em>表示法</em></li>
+<li>JSON表达数据的方式对通用的编程概念很友好</li>
+</ol>
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/14</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/14</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "GDAL">GDAL</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "学习笔记">学习笔记</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "GIS">GIS</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/blog/2019/04/11/GeoCafe-wiki/" >
-            
-                <span>GeoCafe-wiki GIS知识整理</span>
-        </a>
-        <div class="abstract-content">
-            <h1>GeoCafe-wiki</h1>
-<h2 id="A​">A​</h2>
-<p><strong>AJAX</strong></p>
-<p>Asynchronou s JavaScript and XML，异步 JavaScript 和 XML ，是指一种创建交互式<a href="https://baike.baidu.com/item/%E7%BD%91%E9%A1%B5/99347" target="_blank" rel="noopener">网页</a>应用的网页开发技术。 通过在后台与服务器进行少量数据交换，Ajax 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。</p>
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/11</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "wiki">wiki</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "JSON">JSON</a>
     
 </div>
             
@@ -421,8 +403,139 @@
     
     <!-- paginator  -->
     
+    <nav class="page-nav">
+        <a class="extend prev" rel="prev" href="/blog/">< PREV</a><a class="page-number" href="/blog/">1</a><span class="page-number current">2</span>
+    </nav>
+    
 </main>
             <!-- profile -->
+            
+            <div class="profile">
+    <img class="profile-avatar" alt="avatar" src= /blog/avatar/Murphie.png >
+    <div class="profile-name">島崎小姐姐</div>
+    
+    <div class="profile-signature">
+        Book &amp; Code &amp; Geo
+    </div>
+    
+    
+    <div class="profile-social">
+        
+    
+        
+            
+                <a href="mailto:876886131@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/Vezarachan" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title=wechat>
+                  
+                  <img class="profile-qr" src="/blog/assets/wechat_qrcode.png" />
+                </span>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <a href="https://www.zhihu.com/people/vezarachan/activities" class="iconfont-archer zhihu" target="_blank" title=zhihu></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <a href="/blog/atom.xml" class="iconfont-archer rss" target="_blank" title=rss></a>
+            
+        
+    
+
+    </div>
+    
+    
+        <div class="friends">
+            <div>FRIENDS</div>
+            
+                
+                    <span>
+                        <a href= https://3nice.cc/ target="_black">3nice</a>
+                    </span>
+                
+            
+                
+                    <span>
+                        <a href= https://huarch.github.io/ target="_black">Huarch</a>
+                    </span>
+                
+            
+                
+                    <span>
+                        <a href= https://gis.3nice.cc/cn/index.html target="_black">GIS NAVI</a>
+                    </span>
+                
+            
+                
+                    <span>
+                        <a href= http://www.aigisss.com/ target="_black">爱即是诗</a>
+                    </span>
+                
+            
+                
+                    <span>
+                        <a href= https://f7ionsy.me/ target="_black">F7ionsy</a>
+                    </span>
+                
+            
+                
+                    <span>
+                        <a href= https://licardo.cn/ target="_black">Licardo</a>
+                    </span>
+                
+            
+        </div>
+    
+    
+        <div class="about-me">
+            <a href = "/blog/about" >ABOUT ME</a>
+        </div>
+    
+</div>
             
         </div>
         <footer class="footer footer-unloaded">
