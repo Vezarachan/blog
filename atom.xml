@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://elaiza.pro/blog/"/>
-  <updated>2020-07-05T06:29:52.642Z</updated>
+  <updated>2020-07-05T06:39:20.951Z</updated>
   <id>https://elaiza.pro/blog/</id>
   
   <author>
@@ -17,21 +17,18 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>外刊精读系列之Economist[6]B</title>
+    <title>外刊精读系列之Economist[6]</title>
     <link href="https://elaiza.pro/blog/2020/07/05/economist-series-7/"/>
     <id>https://elaiza.pro/blog/2020/07/05/economist-series-7/</id>
     <published>2020-07-05T02:31:33.000Z</published>
-    <updated>2020-07-05T06:29:52.642Z</updated>
+    <updated>2020-07-05T06:39:20.951Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/economist/The-Economist-logo.jpg" alt></p><p>本篇来自于2020年6月13日的『The Economist』中<strong>Technology Quarterly</strong>版块，本期该板块的主题为<strong>AI and its limits</strong>，共6篇文章，预计将会分6期进行精读和分析。本期这一篇文章题为『<strong>Reality Check</strong>』，小标题为Artificial intelligence and its limits，在版块当中起着综述的作用，描述了整个行业的现状，为下面几篇文章的专题概述提供了指南。</p><h2 id="The-beginning">The beginning</h2><p>After years of hype, an understanding of AI’s limitations is starting to <u>sink in</u>, says Tim Cross.</p><p>文章前引用了Tim Cross的句子，表明在AI在多年的火热之后，人们开始充分了解到了其局限性。</p><h2 id="The-promising-future-of-AI">The promising future of AI</h2><p>Profession-services firms such as PWC and McKinsey predict that AI will generate considerable profits for global economy; the progress in AI techology (mechine learning) led by computer-science researchers like Geoffery Hinton, etc., has somewhat inspire people to apply it to every field, from medicine to linguistics, to astronomy and finance. Moreover, the ballooning computing power and oceans of data equally plays a great part. It seems that the general-purpose AI people used to dream of has become real and it is capable of handling everthing.</p><h2 id="The-question-is-AI-really-as-world-changing-as-it-appears">The question: is AI really as world-changing as it appears?</h2><p>Though AI boost a host of researches in several fields, we have to say “No” for this thorny question. Current AI technology - or, to be precise, mechine learning, a statistics-based learning method which correlates inputs with outputs - has multiple drawbacks. One is practical. At present, a large number of applications tend to specialize at one specific thing, like AlphaGo, which has emerged as one of the world’s best Go player. And data are not always readily available. Even with enough data, the newest techologies are not easy to integrate and finally turn into margins. Another problem worth concerning is the algorithms themselves. Improved algorithms, more powerful computers and more data collected does offer electronic computers “intelligence”. However, when involving “edge cases” or complex tasks, the intelligent systems may fail to handle, causing unpredictable and detrimental results. Tesla, for instance, has reported several crashes under its “Autopilot” system.</p><h2 id="The-future-hitherto-unknown">The future: hitherto unknown</h2><p>The AI technology demands a breakthrough to deal with the downsides which will pose fundamental limits on what it can and cannot do. What’s worse, the efforts in driverless cars and natural language processing is confronting with hurdles which derive from the mechine learning itself. There may comes a autumn for AI.</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/economist/The-Economist-logo.jpg" alt></p><p>本篇来自于2020年6月13日的『The Economist』中<strong>Technology Quarterly</strong>版块，本期该板块的主题为<strong>AI and its limits</strong>，共6篇文章，预计将会分6期进行精读和分析。本期这一篇文章题为『<strong>Reality Check</strong>』，小标题为Artificial intelligence and its limits，在版块当中起着综述的作用，描述了整个行业的现状，为下面几篇文章的专题概述提供了指南。</p><a id="more"></a><h2 id="The-beginning">The beginning</h2><p>After years of hype, an understanding of AI’s limitations is starting to <u>sink in</u>, says Tim Cross.</p><p>文章前引用了Tim Cross的句子，表明在AI在多年的火热之后，人们开始充分了解到了其局限性。</p><h2 id="The-promising-future-of-AI">The promising future of AI</h2><p>Profession-services firms such as PWC and McKinsey predict that AI will generate considerable profits for global economy; the progress in AI techology (mechine learning) led by computer-science researchers like Geoffery Hinton, etc., has somewhat inspire people to apply it to every field, from medicine to linguistics, to astronomy and finance. Moreover, the ballooning computing power and oceans of data equally plays a great part. It seems that the general-purpose AI people used to dream of has become real and it is capable of handling everthing.</p><h2 id="The-question-is-AI-really-as-world-changing-as-it-appears">The question: is AI really as world-changing as it appears?</h2><p>Though AI boost a host of researches in several fields, we have to say “No” for this thorny question. Current AI technology - or, to be precise, mechine learning, a statistics-based learning method which correlates inputs with outputs - has multiple drawbacks. One is practical. At present, a large number of applications tend to specialize at one specific thing, like AlphaGo, which has emerged as one of the world’s best Go player. And data are not always readily available. Even with enough data, the newest techologies are not easy to integrate and finally turn into margins. Another problem worth concerning is the algorithms themselves. Improved algorithms, more powerful computers and more data collected does offer electronic computers “intelligence”. However, when involving “edge cases” or complex tasks, the intelligent systems may fail to handle, causing unpredictable and detrimental results. Tesla, for instance, has reported several crashes under its “Autopilot” system.</p><h2 id="The-future-hitherto-unknown">The future: hitherto unknown</h2><p>The AI technology demands a breakthrough to deal with the downsides which will pose fundamental limits on what it can and cannot do. What’s worse, the efforts in driverless cars and natural language processing is confronting with hurdles which derive from the mechine learning itself. There may comes a autumn for AI.</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/economist/The-Economist-logo.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt;本篇来自于2020年6月13日
-      
+      &lt;p&gt;&lt;img src=&quot;https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/economist/The-Economist-logo.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;本篇来自于2020年6月13日的『The Economist』中&lt;strong&gt;Technology Quarterly&lt;/strong&gt;版块，本期该板块的主题为&lt;strong&gt;AI and its limits&lt;/strong&gt;，共6篇文章，预计将会分6期进行精读和分析。本期这一篇文章题为『&lt;strong&gt;Reality Check&lt;/strong&gt;』，小标题为Artificial intelligence and its limits，在版块当中起着综述的作用，描述了整个行业的现状，为下面几篇文章的专题概述提供了指南。&lt;/p&gt;
     
     </summary>
     
