@@ -20,27 +20,24 @@
     <meta name="keywords" content="Books,GIS,Code">
     
     <meta name="description" content>
-    <meta name="description" content="Learning GDAL初识GDALGDAL是由C++编写的具有X/MIT许可证的开源空间数据操作库，其主要由两部分组成，如下所示：  GDAL(Geospatial Data Abstraction Library，地理空间数据抽象库，用于操作栅格数据) ORG(OGR Simple Feature Library，简单要素库，用于操作矢量数据)">
-<meta name="keywords" content="GDAL,GIS">
+    <meta name="description" content="Header files in C++头文件的存在使得函数、结构体等的调用变得简单，仅需在头文件中声明，而具体的实现在源文件中，从而方便了大量程序的多文件管理。一般而言，头文件的内容主要为以下六项：">
+<meta name="keywords" content="C++">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Learning GDAL -1-">
-<meta property="og:url" content="https://elaiza.pro/blog/2019/04/14/GDAL学习笔记1/index.html">
+<meta property="og:title" content="Learning C++ [1]">
+<meta property="og:url" content="https://elaiza.pro/blog/2020/07/06/learning-cpp-1/index.html">
 <meta property="og:site_name" content="Elaiza&#39;s Bookshop">
-<meta property="og:description" content="Learning GDAL初识GDALGDAL是由C++编写的具有X/MIT许可证的开源空间数据操作库，其主要由两部分组成，如下所示：  GDAL(Geospatial Data Abstraction Library，地理空间数据抽象库，用于操作栅格数据) ORG(OGR Simple Feature Library，简单要素库，用于操作矢量数据)">
+<meta property="og:description" content="Header files in C++头文件的存在使得函数、结构体等的调用变得简单，仅需在头文件中声明，而具体的实现在源文件中，从而方便了大量程序的多文件管理。一般而言，头文件的内容主要为以下六项：">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/gdal_supported_raster_frmts.jpg">
-<meta property="og:image" content="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/gdal_supported_vec_frmts.jpg">
-<meta property="og:updated_time" content="2020-01-22T13:30:08.803Z">
+<meta property="og:updated_time" content="2020-07-07T08:18:28.841Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Learning GDAL -1-">
-<meta name="twitter:description" content="Learning GDAL初识GDALGDAL是由C++编写的具有X/MIT许可证的开源空间数据操作库，其主要由两部分组成，如下所示：  GDAL(Geospatial Data Abstraction Library，地理空间数据抽象库，用于操作栅格数据) ORG(OGR Simple Feature Library，简单要素库，用于操作矢量数据)">
-<meta name="twitter:image" content="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/gdal_supported_raster_frmts.jpg">
+<meta name="twitter:title" content="Learning C++ [1]">
+<meta name="twitter:description" content="Header files in C++头文件的存在使得函数、结构体等的调用变得简单，仅需在头文件中声明，而具体的实现在源文件中，从而方便了大量程序的多文件管理。一般而言，头文件的内容主要为以下六项：">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
     <link rel="alternate" href="/blog/atom.xml" title="Elaiza&#39;s Bookshop" type="application/atom+xml">
     
-    <title>Learning GDAL -1- · Elaiza&#39;s Bookshop</title>
+    <title>Learning C++ [1] · Elaiza&#39;s Bookshop</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -235,7 +232,7 @@
                 <a href="/blog/" >Elaiza&#39;s Bookshop</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">Learning GDAL -1-</a>
+                <a href="#" class="post-name">Learning C++ [1]</a>
             </div>
     </div>
     
@@ -265,7 +262,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Learning GDAL -1-
+            Learning C++ [1]
             <!-- 404 -->
             
         </h1>
@@ -284,20 +281,18 @@ height:50vh;
                 
                     <div class= post-intro-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "GDAL">GDAL</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "GIS">GIS</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "C++">C++</a>
     
 </div>
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">607</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">751</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/04/14</span>
+                    <span class="post-intro-time">2020/07/06</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -421,49 +416,156 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h1 id="Learning-GDAL"><a href="#Learning-GDAL" class="headerlink" title="Learning GDAL"></a>Learning GDAL</h1><h2 id="初识GDAL"><a href="#初识GDAL" class="headerlink" title="初识GDAL"></a>初识GDAL</h2><p>GDAL是由C++编写的具有X/MIT许可证的开源空间数据操作库，其主要由两部分组成，如下所示：</p>
-<ul>
-<li>GDAL(Geospatial Data Abstraction Library，地理空间数据抽象库，用于操作栅格数据)</li>
-<li>ORG(OGR Simple Feature Library，简单要素库，用于操作矢量数据)</li>
-</ul>
+        <h2 id="Header-files-in-C"><a href="#Header-files-in-C" class="headerlink" title="Header files in C++"></a>Header files in C++</h2><p>头文件的存在使得函数、结构体等的调用变得简单，仅需在头文件中声明，而具体的实现在源文件中，从而方便了大量程序的多文件管理。一般而言，头文件的内容主要为以下六项：</p>
 <a id="more"></a>
-<h2 id="GDAL支持的数据格式"><a href="#GDAL支持的数据格式" class="headerlink" title="GDAL支持的数据格式"></a>GDAL支持的数据格式</h2><ol>
-<li><p><a href="https://www.gdal.org/formats_list.html" target="_blank" rel="noopener">栅格数据格式</a>（155）</p>
-<p><img src="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/gdal_supported_raster_frmts.jpg" alt="supported_raster_formats"></p>
-</li>
-<li><p><a href="https://www.gdal.org/ogr_formats.html" target="_blank" rel="noopener">矢量数据格式</a>（95）</p>
-<p><img src="https://elaiza-bookstore.oss-cn-hangzhou.aliyuncs.com/post_images/gdal_supported_vec_frmts.jpg" alt="supported_vector_formats"></p>
-</li>
-</ol>
-<h2 id="GDAL源码文件夹结构"><a href="#GDAL源码文件夹结构" class="headerlink" title="GDAL源码文件夹结构"></a>GDAL源码文件夹结构</h2><ul>
-<li>alg：GDAL库中提供的一些算法的源代码（这些算法包括但不限于：DEM生成等高线算法、图像纠正算法（几何纠正、TPS纠正、RPC纠正等），栅格矢量化算法、矢量栅格化算法、格网计算算法、PCT和RGB互转算法、分类图的小碎斑块去除算法等）</li>
-<li>apps：GDAL库中提供的一些命令行工具集的源代码</li>
-<li>bridge：用来连接GDAL抽象类的定义和GDAL自己的结构体定义及其实现的源代码</li>
-<li>ci：构建测试文件</li>
-<li>data：GDAL库中需要用到的一些“配置文件”，主要有ESRI的投影文件、ESPG的投影文件、PCI的投影和椭球体文件、AutoCAD的DXF格式的头文件等</li>
-<li>doc：用来生成GDAL帮助文档的一些dox文件</li>
-<li>frmts：针对不同的特定图像格式解析的源代码</li>
-<li>gcore：GDAL抽象类的数据集，图像、波段的读写接口都是在此实现</li>
-<li>gnm：</li>
-<li>html：GDAL生成的帮助文档，使用doxygen工具生成的GDAL帮助文档会出现在这个文件夹中</li>
-<li>m4：m4为后缀名的文件。m4文件叫Macro Processor Library，是便宜基础中最核心的文件，这个文件主要是用autoconf来产生configure配置文件，继而自动生成Makefile文件（Windows平台无用）</li>
-<li>man：用来生成Linux或者其他平台下的帮助文件（Windows平台无用）</li>
-<li>ogr：OGR库源代码</li>
-<li>port：CPL库的文件，CPL是一个GDAL的底层支持库，CPL库中定义了一些字符串的操作、文件处理、网页请求、数据库连接、哈希表、字符加密文化压缩等基础的函数。</li>
-<li>scripts：</li>
-<li>swig：SWIG(Simplified Wrapper and InterfaceGenerator)的作用就是可以将C/C++写的库封装为Python、Java、C#、Perl和Ruby等其他语言的访问接口</li>
-<li>vb6：将GDAL编译成一个VB6的模块</li>
-<li>(2.2.3以后版本已无）wince：用来编译Windows CE平台下的GDAL库</li>
+<ul>
+<li>函数原型（function prototype）</li>
+<li>符号常量（#define 或者const定义的变量）</li>
+<li>结构体的声明（structure declaration）</li>
+<li>类的声明（class declaration）</li>
+<li>模板的声明（template declaration）</li>
+<li>内联函数（inline function）</li>
 </ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// header file - demo1.h</span></span><br><span class="line"><span class="comment">// function prototype</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">string</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print_person</span><span class="params">(<span class="keyword">const</span> person &amp; p)</span></span>;</span><br><span class="line"><span class="comment">// constant</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> NUM_OF_PEOPLE = <span class="number">60</span>;</span><br><span class="line"><span class="comment">// structure declaration</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">person</span> &#123;</span></span><br><span class="line">    <span class="keyword">long</span> id;</span><br><span class="line">    <span class="built_in">string</span> name;</span><br><span class="line">    <span class="keyword">double</span> gpa;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// class declaration</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">debt</span> &#123;</span></span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">    person p;</span><br><span class="line">    <span class="keyword">double</span> amount;</span><br><span class="line">    <span class="keyword">int</span> days;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">calculate_debts</span><span class="params">(<span class="keyword">const</span> person &amp; p, <span class="keyword">double</span> amount, <span class="keyword">int</span> days)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// template declaration</span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</span><br><span class="line">auto add(T1 t1, T2 t2) -&gt; decltype(t1 + t2) &#123;</span><br><span class="line">    <span class="keyword">return</span> t1 + t2;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// inline function</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="title">plus</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123; <span class="keyword">return</span> n + <span class="number">1</span>; &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Storage-Duration-Scope-and-Linkage"><a href="#Storage-Duration-Scope-and-Linkage" class="headerlink" title="Storage Duration, Scope and Linkage"></a>Storage Duration, Scope and Linkage</h2><h3 id="关于存储期（storage-duration）"><a href="#关于存储期（storage-duration）" class="headerlink" title="关于存储期（storage duration）"></a>关于存储期（storage duration）</h3><p>存储期可以简单的认为是C++中变量的生存期，C++11下有4中存储周期，分别为</p>
+<ol>
+<li>Automatic storage duration</li>
+<li>Static storage duration</li>
+<li>Thread storage duration</li>
+<li>Dynamic storage duration</li>
+</ol>
+<h3 id="关于作用域和连接（scope-amp-linkage）"><a href="#关于作用域和连接（scope-amp-linkage）" class="headerlink" title="关于作用域和连接（scope &amp; linkage）"></a>关于作用域和连接（scope &amp; linkage）</h3><p>作用域（scope）描述了一个文件中一个名字（变量名、函数名等）的作用范围，对于变量而言，可以有local、global、class、namespace四种作用域，对于函数而言，只有global、class、namespace三种作用域。</p>
+<p>连接（linkage）描述了对象和函数在编译单元之间共享的方式，其有三种模式。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>连接方式</th>
+<th>可见性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>external linkage</td>
+<td>在其他编译单元均可见</td>
+</tr>
+<tr>
+<td>internal linkage</td>
+<td>仅在本编译单元可见</td>
+</tr>
+<tr>
+<td>no linkage</td>
+<td>仅在作用域中可见</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="变量存储的类型"><a href="#变量存储的类型" class="headerlink" title="变量存储的类型"></a>变量存储的类型</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Storage Desc</th>
+<th>Duration</th>
+<th>Scope</th>
+<th>Linkage</th>
+<th>How Declared</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Automatic</td>
+<td>Automatic</td>
+<td>Block</td>
+<td>None</td>
+<td>In a block</td>
+</tr>
+<tr>
+<td>Register</td>
+<td>Automatic</td>
+<td>Block</td>
+<td>None</td>
+<td>In a block with the keyword <em>register</em></td>
+</tr>
+<tr>
+<td>Static with no linkage</td>
+<td>Static</td>
+<td>Block</td>
+<td>None</td>
+<td>In a block with the keyword <em>static</em></td>
+</tr>
+<tr>
+<td>Static with external linkage</td>
+<td>Static</td>
+<td>File</td>
+<td>External</td>
+<td>Outside all functions</td>
+</tr>
+<tr>
+<td>Static with internal linkage</td>
+<td>Static</td>
+<td>File</td>
+<td>Internal</td>
+<td>Outside all functions with the keyword <em>static</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// different type of static variables - static_type.cpp</span></span><br><span class="line"><span class="keyword">double</span> flow1 = <span class="number">55.005</span>; <span class="comment">// static with external linkage</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">double</span> flow2 = <span class="number">45.156</span>; <span class="comment">// static with internal linkage</span></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">get_flow</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">double</span> flow3 = <span class="number">52.5165</span>; <span class="comment">// static with no linkage</span></span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Specifiers-and-Qualifiers"><a href="#Specifiers-and-Qualifiers" class="headerlink" title="Specifiers and Qualifiers"></a>Specifiers and Qualifiers</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Type</th>
+<th>Keyword</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">storage class specifer</td>
+<td>auto</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td>register</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td>static</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td>extern</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td>thread_local</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td>mutable</td>
+</tr>
+<tr>
+<td style="text-align:left">cv-qualifier</td>
+<td>const</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td>violate</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="Namespaces"><a href="#Namespaces" class="headerlink" title="Namespaces"></a>Namespaces</h2><p>由于越来越多的代码和第三方库的出现，变量、函数的命名有极大的可能出现冲突，因此C++引入了命名空间（namespace）来划分代码，namespace，结合<strong>::</strong>可以实现不同命名空间内变量和函数的访问。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// namespace.h</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> NUM_OF_PEOPLE;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> person &#123;</span><br><span class="line">    <span class="keyword">int</span> NUM_OF_PEOPLE;</span><br><span class="line">    </span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Person</span> &#123;</span></span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">string</span> name;</span><br><span class="line">        <span class="keyword">long</span> id;</span><br><span class="line">        <span class="keyword">double</span> gpa;</span><br><span class="line">        Person() &#123; &#125;</span><br><span class="line">        Person(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span> &amp; name, <span class="keyword">long</span> id, <span class="keyword">double</span> gpa): name(name), id(id), gpa(gpa) &#123;</span><br><span class="line">            <span class="keyword">this</span>-&gt;name = name;</span><br><span class="line">            <span class="keyword">this</span>-&gt;id = id;</span><br><span class="line">            <span class="keyword">this</span>-&gt;gpa = gpa;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">show_person</span><span class="params">(<span class="keyword">const</span> Person &amp; p)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"name: "</span> &lt;&lt; p.name &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"id: "</span> &lt;&lt; p.id &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"gpa: "</span> &lt;&lt; p.gpa &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> debts &#123;</span><br><span class="line">    <span class="keyword">using</span> <span class="keyword">namespace</span> person;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Debt</span> &#123;</span></span><br><span class="line">        Person person;</span><br><span class="line">        <span class="keyword">double</span> amount;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> NUM_OF_PEOPLE;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; NUM_OF_PEOPLE;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; ::NUM_OF_PEOPLE;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; person::NUM_OF_PEOPLE;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="https://elaiza.pro/blog">Elaiza</a>
-            <p>原文链接：<a href="https://elaiza.pro/blog/2019/04/14/GDAL学习笔记1/">https://elaiza.pro/blog/2019/04/14/GDAL学习笔记1/</a>
-            <p>发表日期：<a href="https://elaiza.pro/blog/2019/04/14/GDAL学习笔记1/">April 14th 2019, 12:00:00 am</a>
-            <p>更新日期：<a href="https://elaiza.pro/blog/2019/04/14/GDAL学习笔记1/">January 22nd 2020, 9:30:08 pm</a>
+            <p>原文链接：<a href="https://elaiza.pro/blog/2020/07/06/learning-cpp-1/">https://elaiza.pro/blog/2020/07/06/learning-cpp-1/</a>
+            <p>发表日期：<a href="https://elaiza.pro/blog/2020/07/06/learning-cpp-1/">July 6th 2020, 4:18:32 pm</a>
+            <p>更新日期：<a href="https://elaiza.pro/blog/2020/07/06/learning-cpp-1/">July 7th 2020, 4:18:28 pm</a>
             <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -471,17 +573,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/blog/2020/01/22/pandas-series-1-/" title= "学习pandas系列 -1-">
-                    <div class="nextTitle">学习pandas系列 -1-</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/blog/2019/04/11/GeoCafe-wiki/" title= "GeoCafe-wiki GIS知识整理">
-                    <div class="prevTitle">GeoCafe-wiki GIS知识整理</div>
+                <a href= "/blog/2020/07/05/economist-series-7/" title= "外刊精读系列之Economist[6]">
+                    <div class="prevTitle">外刊精读系列之Economist[6]</div>
                 </a>
             
         </li>
@@ -628,7 +725,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Learning-GDAL"><span class="toc-number">1.</span> <span class="toc-text">Learning GDAL</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#初识GDAL"><span class="toc-number">1.1.</span> <span class="toc-text">初识GDAL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GDAL支持的数据格式"><span class="toc-number">1.2.</span> <span class="toc-text">GDAL支持的数据格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GDAL源码文件夹结构"><span class="toc-number">1.3.</span> <span class="toc-text">GDAL源码文件夹结构</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Header-files-in-C"><span class="toc-number">1.</span> <span class="toc-text">Header files in C++</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Storage-Duration-Scope-and-Linkage"><span class="toc-number">2.</span> <span class="toc-text">Storage Duration, Scope and Linkage</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#关于存储期（storage-duration）"><span class="toc-number">2.1.</span> <span class="toc-text">关于存储期（storage duration）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于作用域和连接（scope-amp-linkage）"><span class="toc-number">2.2.</span> <span class="toc-text">关于作用域和连接（scope &amp; linkage）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量存储的类型"><span class="toc-number">2.3.</span> <span class="toc-text">变量存储的类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Specifiers-and-Qualifiers"><span class="toc-number">2.4.</span> <span class="toc-text">Specifiers and Qualifiers</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Namespaces"><span class="toc-number">3.</span> <span class="toc-text">Namespaces</span></a></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
